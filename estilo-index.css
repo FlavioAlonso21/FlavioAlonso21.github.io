@@ -1,0 +1,9 @@
+body{
+    background-color: black;
+}
+p{
+    color: white;
+}
+p#indice{
+    text-align: center;
+}
