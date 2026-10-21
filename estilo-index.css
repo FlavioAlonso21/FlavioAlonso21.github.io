@@ -1,9 +1,24 @@
 body{
     background-color: black;
-}
-p{
+    background-image: url(imagenes/695ba0c44e5f39-15280707.webp);
+    background-size: 100% auto;
     color: white;
 }
-p#indice{
+h1{
     text-align: center;
+}
+h2#indice{
+    text-align: center;
+}
+li{
+    display: inline-block;
+    width:calc(100%/6);
+    text-align: right;
+    height: 35px;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: ;
 }
