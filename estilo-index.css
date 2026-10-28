@@ -1,24 +1,43 @@
 body{
-    background-color: black;
+    background-color: #0f172a;
     background-image: url(imagenes/695ba0c44e5f39-15280707.webp);
     background-size: 100% auto;
     color: white;
 }
-h1{
-    text-align: center;
-}
-h2#indice{
-    text-align: center;
+header{
+    display: flex;
+    background-color: rgba(30, 41, 59, 0.7);
+    justify-content: space-between;
+    align-items: center;
 }
 li{
     display: inline-block;
-    width:calc(100%/6);
-    text-align: right;
-    height: 35px;
     text-decoration: none;
+}
+ol{
+    
+    
+}
+h1{
+    text-align: center;
+    font-family: Oswald;
 }
 a{
     text-decoration: none;
     color: white;
-    font-family: ;
+    font-family: Questrial;
+}
+.material-symbols-outlined{
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.material-symbols-outlined{
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
