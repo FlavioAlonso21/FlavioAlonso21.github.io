@@ -65,7 +65,18 @@ h3{
     color: rgb(180, 0, 0);
     text-align: center;
     font-family: Michroma;
-    padding: 0 0 20rem 0 ;
+    padding: 0 0 10rem 0 ;
+}
+div.patrick-stewart{
+    text-align: center;
+    padding: 0 0 10rem 0;
+}
+div.patrick-stewart a{
+    text-decoration: none;
+    color: white;
+}
+div.patrick-stewart a:hover{
+    color: yellow;
 }
 section.imagenentradasdoomsday{
     position: relative;
