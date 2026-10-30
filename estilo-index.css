@@ -9,7 +9,7 @@ body{
 header{
     display: flex;
     box-sizing: border-box;
-    background-color: rgba(30, 41, 59, 0.7);
+    background-color: rgba(30, 41, 59, 0.5);
     justify-content: space-between;
     align-items: center;
     padding: 10px 40px;
@@ -18,8 +18,23 @@ header{
     left: 0;
     width: 100%;
     z-index: 1000;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+}
+@keyframes efecto-indice{
+    0%{
+        filter: blur(0px);
+        transform: scale(1);
+        background: transparent;
+    }
+    50%{
+        filter: blur(1px);
+    }
+    100%{
+        filter: blur(0px);
+        transform: scale(1.05);
+        background: rgba(255, 0, 0, 0.75);
+    }
 }
 .indice{
     display: flex;
@@ -28,7 +43,7 @@ header{
     padding: 0 10rem 0 0;
 }
 .logoindice{
-    padding: 0 0 0 15.5rem;
+    padding: 1px 0 0 15.5rem;
 }
 li.elementolista{
     margin: 0;
@@ -36,10 +51,11 @@ li.elementolista{
     text-decoration: none;
     border-radius: 30px;
     padding: 5px 10px;
-    transition: background 0.3s ease;
+    cursor: pointer;
+    transition : transform 0,7 cubic-bezier(0.25,1, 0.5, 1), background-color 0.4s ease, filter 0.4s ease;
 }
 li.elementolista:hover{
-    background: rgba(255, 0, 0, 0.75);
+    animation : efecto-indice 0.7s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 a.elementolista{
     text-decoration: none;
@@ -71,9 +87,21 @@ div.patrick-stewart{
     text-align: center;
     padding: 0 0 10rem 0;
 }
+div.patrick-stewart p{
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
 div.patrick-stewart a{
+    display: inline-flex;
+    flex-direction: column;
     text-decoration: none;
     color: white;
+    font-family: Roboto Condensed, sans-serif;
+    font-weight: 800;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
 div.patrick-stewart a:hover{
     color: yellow;
@@ -110,12 +138,11 @@ div.caja-doomsday-logo p{
 div.caja-doomsday-logo p span{
     color: green;
 }
-------------hasta aqui
 .fila-botones{
     display: flex;
     align-items: center;
     flex-direction: row;
-    gap: 30px;
+    gap: 5px;
     margin-top: 15px;
 }
 .fila-botones a{
@@ -126,7 +153,7 @@ div.caja-doomsday-logo p span{
     padding: 12px 24px;
     cursor: pointer;
     transform: skewX(-15deg);
-    transition: background-color 0.25s ease, transform 0.25s ease;
+    transition: background-color 0.4s ease, transform 0.4s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 .fila-botones a:hover{
@@ -141,4 +168,69 @@ div.caja-doomsday-logo p span{
     font-size: 0.8rem;
     letter-spacing: 1.5px;
     text-transform: uppercase;
+}
+footer{
+    background-color: black;
+    margin: 0;
+    padding: 0 0 1px 0;
+    border-top: 1px solid rgb(25, 45, 100);
+    padding: 0 0 5rem 0;
+    box-sizing: border-box;
+}
+div.footer-logo img{
+    display: block;
+    margin: 50px auto 0;
+}
+.footer-links{
+    list-style: none;
+    padding: 0;
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+.footer-links li a{
+    text-decoration: none;
+    font-family: Questrial;
+    color: #a0a0a0;
+}
+.footer-links li a:hover{
+    color: white;
+}
+.seccion-redes p{
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    font-family: Oswald;
+    color: #a0a0a0;
+    text-decoration: underline;
+    text-align: center;
+}
+.redes-sociales{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 3rem 0;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 3rem;
+}
+.redes-sociales a{
+    color: #a0a0a0;
+    text-decoration: none;
+    font-family: Questrial;
+}
+.redes-sociales a:hover{
+    color: white;
+}
+.info-final{
+    text-align: center;
+    font-family: Questrial;
+    color: #a0a0a0;
+    padding: 0 0 0 0;
+    margin: 0;
+}
+.info-final span{
+    font-family: Oswald;
+    margin: 0 10px 0 0;
 }
