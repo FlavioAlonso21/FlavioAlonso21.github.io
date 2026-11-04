@@ -207,7 +207,7 @@ div.footer-logo img{
 }
 .redes-sociales{
     list-style: none;
-    padding: 0;
+    padding: 10px 0 0 0;
     margin: 0 0 3rem 0;
     padding-bottom: 1rem;
     display: flex;
