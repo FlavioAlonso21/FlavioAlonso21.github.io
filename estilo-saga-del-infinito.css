@@ -1,0 +1,147 @@
+body{
+    margin: 0 0 0 0;
+    background-color: #0f172a;
+    background-image:
+    background-size: 100% auto;
+    color: white;
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    box-sizing: border-box;
+    background-color: rgba(30, 41, 59, 0.5);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+@keyframes efecto-indice{
+    0%{
+        filter: blur(0px);
+        transform: scale(1);
+        background: transparent;
+    }
+    50%{
+        filter: blur(1px);
+    }
+    100%{
+        filter: blur(0px);
+        transform: scale(1.05);
+        background: rgba(255, 0, 0, 0.75);
+    }
+}
+.indice{
+    display: flex;
+    font-size: 125%;
+    gap: 30px;
+    padding: 0 10rem 0 0;
+}
+.logoindice{
+    padding: 1px 0 0 15.5rem;
+}
+li.elementolista{
+    margin: 0;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition : transform 0,7 cubic-bezier(0.25,1, 0.5, 1), background-color 0.4s ease, filter 0.4s ease;
+}
+li.elementolista:hover{
+    animation : efecto-indice 0.7s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+a.elementolista{
+    text-decoration: none;
+    color: white;
+    font-family: Questrial;
+}
+div.migas{
+    margin: 8rem;
+}
+a.migas{
+    color: white;
+    text-decoration: none;
+    font-family: Oswald;
+    font-size: 110%;
+}
+h1{
+    margin: 12rem auto 10rem auto;
+    font-size: 500%;
+    text-align: center;
+    font-family: Oswald;
+    width: fit-content;
+    line-height: 1.0;
+    text-shadow:0 0 15px rgba(255, 255, 255, 0.5);
+}
+footer{
+    background-color: black;
+    margin: 12rem 0 0 0;
+    padding: 0 0 1px 0;
+    border-top: 1px solid rgb(25, 45, 100);
+    padding: 0 0 5rem 0;
+    box-sizing: border-box;
+}
+div.footer-logo img{
+    display: block;
+    margin: 50px auto 0;
+}
+.footer-links{
+    list-style: none;
+    padding: 0;
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+.footer-links li a{
+    text-decoration: none;
+    font-family: Questrial;
+    color: #a0a0a0;
+}
+.footer-links li a:hover{
+    color: white;
+}
+.seccion-redes p{
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    font-family: Oswald;
+    color: #a0a0a0;
+    text-decoration: underline;
+    text-align: center;
+}
+.redes-sociales{
+    list-style: none;
+    padding: 10px 0 0 0;
+    margin: 0 0 3rem 0;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 3rem;
+}
+.redes-sociales a{
+    color: #a0a0a0;
+    text-decoration: none;
+    font-family: Questrial;
+}
+.redes-sociales a:hover{
+    color: white;
+}
+.info-final{
+    text-align: center;
+    font-family: Questrial;
+    color: #a0a0a0;
+    padding: 0 0 0 0;
+    margin: 0;
+}
+.info-final span{
+    font-family: Oswald;
+    margin: 0 10px 0 0;
+}
